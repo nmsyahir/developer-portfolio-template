@@ -1,6 +1,6 @@
 export type PortfolioConfig = {
   site: { title: string; description: string; accent: string };
-  person: { name: string; initials: string; role: string; headline: string; profileImage: string; location: string; availability: string; intro: string; email: string; resumeUrl: string; socials: { github: string; linkedin: string } };
+  person: { name: string; navName: string; initials: string; role: string; headline: string; profileImage: string; location: string; availability: string; intro: string; email: string; resumeUrl: string; socials: { github: string; linkedin: string } };
   sections: Record<"about" | "experience" | "projects" | "skills" | "education" | "contact", boolean>;
   about: { eyebrow: string; title: string; cards: { icon: string; title: string; items: { text: string; date?: string }[] }[] };
   experience: { company: string; role: string; period: string; location: string; summary: string; achievements: string[]; technologies: string[] }[];
@@ -16,7 +16,7 @@ export type PortfolioConfig = {
 export const portfolio: PortfolioConfig = {
   site: { title: "Nik Mohammad Syahir — Software Developer & QA", description: "Nik Mohammad Syahir's software development and QA portfolio: web applications, backend APIs, Android, and intelligent job matching.", accent: "#d6ad68" },
   person: {
-    name: "Nik Mohammad Syahir", initials: "NS", role: "Software Developer & QA", headline: "Software Developer & QA Intern · IT Student", profileImage: "/profile.jpg", location: "Kajang, Selangor",
+    name: "Nik Mohammad Syahir", navName: "Nik Syahir", initials: "NS", role: "Software Developer & QA", headline: "Software Developer & QA Intern · IT Student", profileImage: "/profile.jpg", location: "Kajang, Selangor",
     availability: "Open to software development & QA opportunities",
     intro: "I build web and backend applications, test APIs, and debug software with a focus on reliable user experiences. Currently working with Next.js, Java, Spring Boot, and PostgreSQL at ReadHero.",
     email: "nikmohammadsyahir18@gmail.com", resumeUrl: "", // Add a public PDF only if you want to share your full CV.
@@ -58,9 +58,9 @@ export const portfolio: PortfolioConfig = {
     },
   ],
   projects: [
-    { title: "Job Recommendation Portal", category: "Final year project", image: "", description: "Built a Django portal that extracts PDF resumes and uses NLP, TF-IDF, and cosine similarity to match candidates with relevant job listings.", technologies: ["Python", "Django", "NLP", "TF-IDF"], github: "", demo: "", featured: true },
-    { title: "MYHazard", category: "Team mobile project", image: "", description: "Co-developed an Android app for reporting floods, accidents, potholes, and roadblocks. Its real-time GPS location tracking helps show nearby hazards on Google Maps, supported by a Node/Express API and MongoDB.", technologies: ["Android", "Java", "Node.js", "MongoDB", "Google Maps"], github: "", demo: "" },
-    { title: "Event Planning System", category: "Web application", image: "", description: "Developed an event planner with map-based locations, route guidance, and live weather forecasts using Google Maps and OpenWeatherMap APIs.", technologies: ["React", "Node.js", "Express", "MongoDB"], github: "", demo: "" },
+    { title: "Job Recommendation Portal", category: "Final year project", image: "/projects/job-recommendation.png", description: "Built a Django portal that extracts PDF resumes and uses NLP, TF-IDF, and cosine similarity to match candidates with relevant job listings.", technologies: ["Python", "Django", "NLP", "TF-IDF"], github: "", demo: "", featured: true },
+    { title: "MYHazard", category: "Team mobile project", image: "/projects/myhazard.png", description: "Co-developed an Android app for reporting floods, accidents, potholes, and roadblocks. Its real-time GPS location tracking helps show nearby hazards on Google Maps, supported by a Node/Express API and MongoDB.", technologies: ["Android", "Java", "Node.js", "MongoDB", "Google Maps"], github: "", demo: "" },
+    { title: "Event Planning System", category: "Web application", image: "/projects/event-planning.png", description: "Developed an event planner with map-based locations, route guidance, and live weather forecasts using Google Maps and OpenWeatherMap APIs.", technologies: ["React", "Node.js", "Express", "MongoDB"], github: "", demo: "" },
   ],
   projectsNote: "Details available on request",
   skills: [
@@ -74,5 +74,5 @@ export const portfolio: PortfolioConfig = {
     { school: "Universiti Teknologi MARA (UiTM), Arau", qualification: "Bachelor of Information Technology (Hons.) — Creative IT", period: "Oct 2024–Present", note: "CGPA 3.77/4.0; Dean's List every completed semester. Direct entry into Semester 3 via the Diploma pathway." },
     { school: "Universiti Teknologi MARA (UiTM), Arau", qualification: "Diploma in Computer Science", period: "Mar 2022–Aug 2024", note: "CGPA 3.59/4.0; Dean's List for five semesters and Vice Chancellor Award." },
   ],
-  contact: { title: "Let’s connect.", description: "Looking for a developer or QA engineer who can work across implementation and testing? I'd be glad to hear from you.", showForm: true, formEndpoint: "" },
+  contact: { title: "Let’s connect.", description: "I'm looking for a junior software development or QA opportunity. I bring hands-on experience in building and testing applications, and I'm ready to learn, contribute, and grow with a team.", showForm: true, formEndpoint: "" },
 };

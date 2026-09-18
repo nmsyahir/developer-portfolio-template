@@ -31,17 +31,17 @@ Open [http://localhost:5173](http://localhost:5173).
 
 ## Make it yours
 
-For normal personalisation, edit only `data/portfolio.ts`. It contains your name, role, introduction, contact details, social links, About copy, experience, projects, skills, education, and contact settings. Replace `public/profile.jpg` with your own portrait, or set `profileImage` to another file in `public/`. Leave `profileImage` empty to use your initials instead.
+For normal personalisation, edit only `data/portfolio.ts`. It contains your full `name`, shorter header `navName`, role, introduction, contact details, social links, About copy, experience, projects, skills, education, and contact settings. Replace `public/profile.jpg` with your own portrait, or set `profileImage` to another file in `public/`. Leave `profileImage` empty to use your initials instead.
 
 ### For friends: make your own copy
 
 1. On GitHub, choose **Use this template → Create a new repository**. Do not edit Nik's original repository.
 2. In your new repository, open `data/portfolio.ts` and use GitHub's pencil button to replace the name, bio, About cards, work, projects, skills, education, email, and social links. Save the change.
-3. Replace `public/profile.jpg` with your own image, or set `profileImage: ""` and change `initials`. Add a resume only if you want it publicly downloadable.
+3. Replace `public/profile.jpg` and the example screenshots in `public/projects/` with your own images, or set `profileImage: ""` and change `initials`. Add a resume only if you want it publicly downloadable.
 4. Keep only sections you need using the `sections` flags. For a project you are not ready to share, leave `github` and `demo` empty.
 5. Import **your** repository into a host such as Vercel. Future edits to your repo will redeploy your own site; they will not change Nik's.
 
-The code is MIT-licensed. Nik's portrait and personal biography are examples, not reusable template assets: replace them before publishing your version.
+The code is MIT-licensed. Nik's portrait, project screenshots, and personal biography are examples, not reusable template assets: replace them before publishing your version.
 
 ### Hide a section
 
