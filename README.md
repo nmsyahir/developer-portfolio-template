@@ -131,7 +131,7 @@ developer-portfolio-template/
 npm run build
 ```
 
-That command builds the current Cloudflare/Sites version. To verify the standard Next.js build used by Vercel and Netlify, run `npm run build:next`.
+That command builds the standard Next.js version used by Netlify and Vercel. `npm run build:next` is an equivalent alias.
 
 ## Deploy
 
@@ -145,7 +145,7 @@ Import your GitHub copy in Netlify. The included `netlify.toml` selects the Next
 
 ### Cloudflare
 
-The existing Site uses a Cloudflare-compatible `vinext` build. Cloudflare Workers also has a free plan, but setting it up is more technical than Vercel for first-time users.
+Cloudflare Workers also has a free plan, but setting up this Next.js template there is more technical than Netlify or Vercel for first-time users.
 
 GitHub Pages is free for public repositories, but it hosts static output only. This repository's default build is not a GitHub Pages export; use one of the hosts above unless you deliberately configure a Next.js static export.
 
