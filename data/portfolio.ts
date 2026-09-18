@@ -37,7 +37,7 @@ export const portfolio: PortfolioConfig = {
         { text: "Built the KSEWA car rental website and documented the SISEMAS system." },
       ] },
       { icon: "🏆", title: "Highlights", items: [
-        { text: "Gold Medal — Best Poster Award, REMACS 9.0 FYP Research Exhibition", date: "2026" },
+        { text: "Best Poster Award (Gold Medal), REMACS 9.0 FYP Research Exhibition", date: "2026" },
         { text: "Dean's List in every completed Bachelor's semester and five Diploma semesters." },
         { text: "Presented the job recommendation portal at SIC 2026." },
       ] },
@@ -58,7 +58,7 @@ export const portfolio: PortfolioConfig = {
     },
   ],
   projects: [
-    { title: "Job Recommendation Portal", category: "Final year project · Gold Medal", image: "", description: "Built a Django portal that extracts PDF resumes and uses NLP, TF-IDF, and cosine similarity to match candidates with relevant job listings.", technologies: ["Python", "Django", "NLP", "TF-IDF"], github: "", demo: "", featured: true },
+    { title: "Job Recommendation Portal", category: "Final year project", image: "", description: "Built a Django portal that extracts PDF resumes and uses NLP, TF-IDF, and cosine similarity to match candidates with relevant job listings.", technologies: ["Python", "Django", "NLP", "TF-IDF"], github: "", demo: "", featured: true },
     { title: "MYHazard", category: "Team mobile project", image: "", description: "Co-developed an Android app for reporting floods, accidents, potholes, and roadblocks. Its real-time GPS location tracking helps show nearby hazards on Google Maps, supported by a Node/Express API and MongoDB.", technologies: ["Android", "Java", "Node.js", "MongoDB", "Google Maps"], github: "", demo: "" },
     { title: "Event Planning System", category: "Web application", image: "", description: "Developed an event planner with map-based locations, route guidance, and live weather forecasts using Google Maps and OpenWeatherMap APIs.", technologies: ["React", "Node.js", "Express", "MongoDB"], github: "", demo: "" },
   ],
