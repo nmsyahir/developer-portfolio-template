@@ -14,7 +14,7 @@ export type PortfolioConfig = {
 // EDIT THIS FILE to make the portfolio yours. Components do not need changing.
 // Empty URLs are handled gracefully; set a section to false to hide it entirely.
 export const portfolio: PortfolioConfig = {
-  site: { title: "Nik Mohammad Syahir — Software Developer & QA", description: "Nik Mohammad Syahir's software development and QA portfolio: web applications, backend APIs, Android, and intelligent job matching.", accent: "#d6ad68" },
+  site: { title: "Nik Mohammad Syahir Portfolio", description: "Nik Mohammad Syahir's software development and QA portfolio: web applications, backend APIs, equipment booking, and intelligent job matching.", accent: "#d6ad68" },
   person: {
     name: "Nik Mohammad Syahir", navName: "Nik Syahir", initials: "NS", role: "Software Developer & QA", headline: "Software Developer & QA Intern · IT Student", profileImage: "/profile.jpg", location: "Kajang, Selangor",
     availability: "Open to software development & QA opportunities",
@@ -58,8 +58,8 @@ export const portfolio: PortfolioConfig = {
     },
   ],
   projects: [
+    { title: "EquipFlow", category: "Full-stack web application", image: "/projects/equipflow.png", description: "Built an equipment booking and maintenance platform with role-based approvals, check-out and returns, conflict prevention, and audit history. Validated critical workflows with unit, API integration, component, and end-to-end tests.", technologies: ["React", "NestJS", "PostgreSQL", "Prisma", "Playwright"], github: "", demo: "", featured: true },
     { title: "Job Recommendation Portal", category: "Final year project", image: "/projects/job-recommendation.png", description: "Built a Django portal that extracts PDF resumes and uses NLP, TF-IDF, and cosine similarity to match candidates with relevant job listings.", technologies: ["Python", "Django", "NLP", "TF-IDF"], github: "", demo: "", featured: true },
-    { title: "MYHazard", category: "Team mobile project", image: "/projects/myhazard.png", description: "Co-developed an Android app for reporting floods, accidents, potholes, and roadblocks. Its real-time GPS location tracking helps show nearby hazards on Google Maps, supported by a Node/Express API and MongoDB.", technologies: ["Android", "Java", "Node.js", "MongoDB", "Google Maps"], github: "", demo: "" },
     { title: "Event Planning System", category: "Web application", image: "/projects/event-planning.png", description: "Developed an event planner with map-based locations, route guidance, and live weather forecasts using Google Maps and OpenWeatherMap APIs.", technologies: ["React", "Node.js", "Express", "MongoDB"], github: "", demo: "" },
   ],
   projectsNote: "Details available on request",
